@@ -14,14 +14,16 @@ Summary: Interacts with a suite of web 'APIs' for taxonomic tasks, such as getti
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/r-taxize-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/r-taxize-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/r-taxize-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/r-taxize-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/r-taxize-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/r-taxize-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/r-taxize-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/r-taxize-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/r-taxize-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/r-taxize-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/r-taxize-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/r-taxize-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/r-taxize/badges/version.svg)](https://anaconda.org/conda-forge/r-taxize)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/r-taxize/badges/downloads.svg)](https://anaconda.org/conda-forge/r-taxize)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-r--taxize-green.svg)](https://anaconda.org/conda-forge/r-taxize) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/r-taxize.svg)](https://anaconda.org/conda-forge/r-taxize) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/r-taxize.svg)](https://anaconda.org/conda-forge/r-taxize) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/r-taxize.svg)](https://anaconda.org/conda-forge/r-taxize) |
 
 Installing r-taxize
 ===================
