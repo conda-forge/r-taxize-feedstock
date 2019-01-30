@@ -1,4 +1,4 @@
-{% set version = "0.9.3" %}
+{% set version = "0.9.5" %}
 
 package:
   name: r-taxize
@@ -9,11 +9,11 @@ source:
   url:
     - https://cran.r-project.org/src/contrib/taxize_{{ version }}.tar.gz
     - https://cran.r-project.org/src/contrib/Archive/taxize/taxize_{{ version }}.tar.gz
-  sha256: ece4737a6dc052d66858487c125f21b8186430ca85680790da801065f6839416
+  sha256: 7a8593aeb6c902712c00fb20359971cb0c34db078525c90422d8ed9b5b3fd6e1
 
 build:
   noarch: generic
-  number: 1001
+  number: 0
   script: R CMD INSTALL --build .
   merge_build_host: True  # [win]
   rpaths:
