@@ -1,11 +1,7 @@
-<!--
-# -*- mode: jinja -*-
--->
-
 About r-taxize
 ==============
 
-Home: https://github.com/ropensci/taxize (devel), https://ropensci.github.io/taxize-book/ (user manual)
+Home: https://github.com/ropensci/taxize (devel), https://ropenscilabs.github.io/taxize-book/ (user manual)
 
 Package license: MIT
 
@@ -18,8 +14,15 @@ Summary: Interacts with a suite of web 'APIs' for taxonomic tasks, such as getti
 Current build status
 ====================
 
-All platforms:
-[![noarch](https://img.shields.io/circleci/project/github/conda-forge/r-taxize-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/r-taxize-feedstock)
+
+<table><tr><td>All platforms:</td>
+    <td>
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=1707&branchName=master">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-taxize-feedstock?branchName=master">
+      </a>
+    </td>
+  </tr>
+</table>
 
 Current release info
 ====================
