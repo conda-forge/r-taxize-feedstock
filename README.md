@@ -1,7 +1,7 @@
 About r-taxize
 ==============
 
-Home: https://github.com/ropensci/taxize (devel), https://ropensci.github.io/taxize-book/ (user manual)
+Home: https://github.com/ropensci/taxize (devel), https://ropenscilabs.github.io/taxize-book/ (user manual)
 
 Package license: MIT
 
