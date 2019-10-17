@@ -1,4 +1,4 @@
-{% set version = '0.9.8' %}
+{% set version = '0.9.9' %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,12 +10,12 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/taxize_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/taxize/taxize_{{ version }}.tar.gz
-  sha256: 8574d253a43784d56f63576f41b86f1dd8e333f7409398d1b58790e6a5416485
+  sha256: 5928b59073007827b93117993fd512353e5a5bf2ecfa1d50b2d46ea7d7194e7e
 
 build:
   script: R CMD INSTALL --build .
   merge_build_host: True  # [win]
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -79,15 +79,16 @@ test:
     - "\"%R%\" -e \"library('taxize')\""  # [win]
 
 about:
-  home: https://github.com/ropensci/taxize (devel), https://ropenscilabs.github.io/taxize-book/
-    (user manual)
+  home: https://github.com/ropensci/taxize (devel), https://taxize.dev (user manual)
   license: MIT
   summary: Interacts with a suite of web 'APIs' for taxonomic tasks, such as getting database
     specific taxonomic identifiers, verifying species names, getting taxonomic hierarchies,
     fetching downstream and upstream taxonomic names, getting taxonomic synonyms, converting
     scientific to common names and vice versa, and more.
   license_family: MIT
-  license_file: LICENSE
+  license_file:
+    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/MIT'
+    - LICENSE
 
 extra:
   recipe-maintainers:
@@ -97,11 +98,11 @@ extra:
 # Package: taxize
 # Title: Taxonomic Information from Around the Web
 # Description: Interacts with a suite of web 'APIs' for taxonomic tasks, such as getting database specific taxonomic identifiers, verifying species names, getting taxonomic hierarchies, fetching downstream and upstream taxonomic names, getting taxonomic synonyms, converting scientific to common names and vice versa, and more.
-# Version: 0.9.8
+# Version: 0.9.9
 # License: MIT + file LICENSE
-# URL: https://github.com/ropensci/taxize (devel), https://ropenscilabs.github.io/taxize-book/ (user manual)
+# URL: https://github.com/ropensci/taxize (devel), https://taxize.dev (user manual)
 # BugReports: https://github.com/ropensci/taxize/issues
-# Authors@R:  c(person(given = "Scott", family = "Chamberlain", role = c("aut", "cre"), email = "myrmecocystus@gmail.com", comment = c(ORCID = "0000-0003-1444-9135")), person(given = "Eduard", family = "Szoecs", role = "aut"), person(given = "Zachary", family = "Foster", role = "aut"), person(given = "Zebulun", family = "Arendsee", role = "aut"), person(given = "Carl", family = "Boettiger", role = "ctb"), person(given = "Karthik", family = "Ram", role = "ctb"), person(given = "Ignasi", family = "Bartomeus", role = "ctb"), person(given = "John", family = "Baumgartner", role = "ctb"), person(given = "James", family = "O'Donnell", role = "ctb"), person(given = "Jari", family = "Oksanen", role = "ctb"), person(given = "Bastian Greshake", family = "Tzovaras", role = "ctb"), person(given = "Philippe", family = "Marchand", role = "ctb"), person(given = "Vinh", family = "Tran", role = "ctb"), person(given = "Maelle", family = "Salmon", role = "ctb"), person(given = "Gaopeng", family = "Li", role = "ctb"), person(given = "Matthias", family = "Grenie", role = "ctb"), person(given = "rOpenSci", role = "fnd", comment = "https://ropensci.org/"))
+# Authors@R: c(person(given = "Scott", family = "Chamberlain", role = c("aut", "cre"), email = "myrmecocystus@gmail.com", comment = c(ORCID = "0000-0003-1444-9135")), person(given = "Eduard", family = "Szoecs", role = "aut"), person(given = "Zachary", family = "Foster", role = "aut"), person(given = "Zebulun", family = "Arendsee", role = "aut"), person(given = "Carl", family = "Boettiger", role = "ctb"), person(given = "Karthik", family = "Ram", role = "ctb"), person(given = "Ignasi", family = "Bartomeus", role = "ctb"), person(given = "John", family = "Baumgartner", role = "ctb"), person(given = "James", family = "O'Donnell", role = "ctb"), person(given = "Jari", family = "Oksanen", role = "ctb"), person(given = "Bastian Greshake", family = "Tzovaras", role = "ctb"), person(given = "Philippe", family = "Marchand", role = "ctb"), person(given = "Vinh", family = "Tran", role = "ctb"), person(given = "Maelle", family = "Salmon", role = "ctb"), person(given = "Gaopeng", family = "Li", role = "ctb"), person(given = "Matthias", family = "Grenie", role = "ctb"), person(given = "rOpenSci", role = "fnd", comment = "https://ropensci.org/"))
 # LazyLoad: yes
 # LazyData: yes
 # VignetteBuilder: knitr
@@ -115,8 +116,8 @@ extra:
 # X-schema.org-keywords: taxonomy, biology, nomenclature, JSON, API, web, api-client, identifiers, species, names
 # X-schema.org-isPartOf: https://ropensci.org
 # NeedsCompilation: no
-# Packaged: 2019-06-27 17:26:18 UTC; sckott
+# Packaged: 2019-10-17 20:12:24 UTC; sckott
 # Author: Scott Chamberlain [aut, cre] (<https://orcid.org/0000-0003-1444-9135>), Eduard Szoecs [aut], Zachary Foster [aut], Zebulun Arendsee [aut], Carl Boettiger [ctb], Karthik Ram [ctb], Ignasi Bartomeus [ctb], John Baumgartner [ctb], James O'Donnell [ctb], Jari Oksanen [ctb], Bastian Greshake Tzovaras [ctb], Philippe Marchand [ctb], Vinh Tran [ctb], Maelle Salmon [ctb], Gaopeng Li [ctb], Matthias Grenie [ctb], rOpenSci [fnd] (https://ropensci.org/)
 # Maintainer: Scott Chamberlain <myrmecocystus@gmail.com>
 # Repository: CRAN
-# Date/Publication: 2019-06-28 06:00:22 UTC
+# Date/Publication: 2019-10-17 21:10:02 UTC
