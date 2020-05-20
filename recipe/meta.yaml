@@ -1,4 +1,4 @@
-{% set version = "0.9.95" %}
+{% set version = "0.9.96" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,12 +10,12 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/taxize_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/taxize/taxize_{{ version }}.tar.gz
-  sha256: 8a27d81678e60f67082d9b0b3cd104fe531ea2be2d9073a20cab016259228834
+  sha256: 2206dc94adcabfa8ea0bf99ec24ec6474ce124775df8b7d44d93fb836fafeb6d
 
 build:
   script: R CMD INSTALL --build .
   merge_build_host: true  # [win]
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
