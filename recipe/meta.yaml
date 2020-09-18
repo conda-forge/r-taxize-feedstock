@@ -1,4 +1,4 @@
-{% set version = "0.9.97" %}
+{% set version = "0.9.98" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/taxize_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/taxize/taxize_{{ version }}.tar.gz
-  sha256: 72522378be0c74b9f325c66bf6edb7ad05ea51314d27d6ea07b17f9065d13238
+  sha256: a40af44887cf6bf93efaeb7c645be61cf346cf73e6fa3b10c8a846e710cc174c
 
 build:
   merge_build_host: true  # [win]
