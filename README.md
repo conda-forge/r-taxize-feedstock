@@ -1,11 +1,11 @@
-About r-taxize
-==============
+About r-taxize-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-taxize-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/ropensci/taxize (devel), https://taxize.dev (user manual)
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-taxize-feedstock/blob/main/LICENSE.txt)
 
 Summary: Interacts with a suite of web 'APIs' for taxonomic tasks, such as getting database specific taxonomic identifiers, verifying species names, getting taxonomic hierarchies, fetching downstream and upstream taxonomic names, getting taxonomic synonyms, converting scientific to common names and vice versa, and more.
 
